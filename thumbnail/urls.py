@@ -23,7 +23,7 @@ urlpatterns = patterns('',
         ExtraContextTemplateView.as_view(
             template_name="thumbnail.html",
             extra_context={
-                "thing": ""#Thing.objects.get(pk=2),
+                "thing": Thing.objects.all()[0],
             }), name="thumbnail"),
 
     url(r'^admin/', include(admin.site.urls)),
