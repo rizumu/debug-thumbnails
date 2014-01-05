@@ -1,6 +1,7 @@
 Django==1.6.1
 Pillow==2.3.0
 django-imagekit
+easy-thumbnails
 git+https://github.com/richleland/django-cumulus.git@3e84cfbf519beea9154ca4e3f8578dc5113b3be2#egg=django-cumulus
 
 ipdb
