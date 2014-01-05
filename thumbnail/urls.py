@@ -3,7 +3,7 @@ from django.views.generic import TemplateView
 
 from django.contrib import admin
 
-from thumbnail.models import Thing
+from thumbnail.things.models import Thing
 
 admin.autodiscover()
 
