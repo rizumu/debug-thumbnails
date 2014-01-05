@@ -96,24 +96,16 @@ STATIC_URL = '/static/'
 
 DEFAULT_FILE_STORAGE = "cumulus.storage.SwiftclientStorage"
 
-# these are the default cumulus settings
 CUMULUS = {
-    "API_KEY": os.environ.get("CUMULUS_API_KEY", None),
+    'PYRAX_IDENTITY_TYPE': 'rackspace',
+    'USE_PYRAX': True,
+    'USERNAME': os.environ.get('CUMULUS_USERNAME', None),
+    'API_KEY': os.environ.get('CUMULUS_API_KEY', None),
     'AUTH_URL': 'us_authurl',
-    'REGION': 'DFW',
-    'CNAMES': None,
     'CONTAINER': 'cumulus-content-tests',
+    'STATIC_CONTAINER': 'cumulus-static-tests',
     'CONTAINER_URI': None,
     'CONTAINER_SSL_URI': None,
-    'STATIC_CONTAINER': 'cumulus-static-tests',
     'SERVICENET': False,
-    'TIMEOUT': 5,
-    'TTL': 600,
     'USE_SSL': False,
-    "USERNAME": os.environ.get("CUMULUS_USERNAME", None),
-    'INCLUDE_LIST': [],
-    'EXCLUDE_LIST': [],
-    'HEADERS': {},
-    'GZIP_CONTENT_TYPES': [],
-    'USE_PYRAX': True,
 }
