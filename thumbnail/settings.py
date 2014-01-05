@@ -24,8 +24,16 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
+TEMPLATE_DIRS = [
+    os.path.join(BASE_DIR, "thumbnail", "templates"),
+]
+
 ALLOWED_HOSTS = []
 
+TEMPLATE_LOADERS = [
+    "django.template.loaders.filesystem.Loader",
+    "django.template.loaders.app_directories.Loader",
+]
 
 # Application definition
 
