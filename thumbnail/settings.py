@@ -38,7 +38,6 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
 
     'cumulus',
-    'imagekit',
 
     'thumbnail.things',
 )
@@ -110,6 +109,3 @@ CUMULUS = {
     'GZIP_CONTENT_TYPES': [],
     'USE_PYRAX': True,
 }
-
-IMAGEKIT_DEFAULT_CACHEFILE_STRATEGY = "imagekit.cachefiles.strategies.Optimistic"
-IMAGEKIT_DEFAULT_FILE_STORAGE = "cumulus.storage.SwiftclientStorage"
