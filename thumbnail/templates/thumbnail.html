@@ -1,4 +1,9 @@
-{{ thing.thumb.width }}
-{{ thing.thumb.height }}
-<img src="{{ thing.thumb.url }}"/>
-{{ thing.thumb.url }}
+{% load thumbnail %}
+
+ORIGINAL</br>
+name: {{ thing.name }} </br>
+url: {{ thing.image.url }} </br>
+scaled: <img src="{{ thing.image.url }}" width="30" height="30"> </br>
+</br>
+THUMB</br>
+thumb: <img src="{{ thing.image|thumbnail_url:'thingthumb' }}"> </br>
