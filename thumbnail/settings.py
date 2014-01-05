@@ -46,6 +46,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
 
     'cumulus',
+    'easy_thumbnails',
 
     'thumbnail.things',
 )
